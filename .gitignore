@@ -1,0 +1,25 @@
+# Build directories
+build/
+bin/
+out/
+# Compiled object files
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+# Debug files
+*.dwo
+*.dSYM/
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.user
+*.ncb
+# Logs and temporary files
+*.log
+*.tmp
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
