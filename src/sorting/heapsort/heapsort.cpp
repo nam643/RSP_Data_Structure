@@ -6,7 +6,6 @@ total : O(nlogn)
 
 Space: O(1)
 */
-
 #include <iostream>
 #include <vector>
 
@@ -33,11 +32,11 @@ void heapSort(vector<int>& arr){
 
     //Build max heap
 
-    for(int i = n/2-1;i>=0;i--){
+    for(int i = n/2-1;i>=0;i--){ // n/2-1 = last non-leaf
         heapify(arr,n,i);
     }
 
-    //extract minimum
+    //extract maximum
 
     for(int i = n-1;i>0;i--){
         swap(arr[0],arr[i]);
@@ -48,7 +47,7 @@ void heapSort(vector<int>& arr){
 
 int main()
 {
-    vector<int> arr = {4, 10, 3, 5, 1};
+    vector<int> arr = {4, 10, 3, 5};
 
     heapSort(arr);
 
